@@ -2,3 +2,5 @@ file
 tail
 head
 xargs
+file
+uname
