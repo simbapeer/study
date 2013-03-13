@@ -4,3 +4,5 @@ head
 xargs
 file
 uname
+ldd
+du
