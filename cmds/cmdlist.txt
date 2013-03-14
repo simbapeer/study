@@ -4,8 +4,5 @@ head
 xargs
 file
 uname
-<<<<<<< HEAD
 ldd
 du
-=======
->>>>>>> 6a835d1736bf9dce51aa883fd031d85af5e7bde9
