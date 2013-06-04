@@ -1,0 +1,1096 @@
+simba@NJ-02870:~/projects/as21/a1001eh/kernel$ tree /home/simba/Desktop/update-3_1.4.0.20130326.rc0.a1001eh_simba
+/home/simba/Desktop/update-3_1.4.0.20130326.rc0.a1001eh_simba
+|-- boot.img
+|-- Manifest.xml
+|-- META-INF
+|   |-- CERT.RSA
+|   |-- CERT.SF
+|   |-- com
+|   |   |-- android
+|   |   |   `-- metadata
+|   |   `-- google
+|   |       `-- android
+|   |           |-- update-binary
+|   |           `-- updater-script
+|   `-- MANIFEST.MF
+|-- recovery
+|   |-- etc
+|   |   `-- install-recovery.sh
+|   `-- recovery-from-boot.p
+`-- system
+    |-- app
+    |   |-- ApplicationsProvider.apk
+    |   |-- BackupRestoreConfirmation.apk
+    |   |-- Bluetooth.apk
+    |   |-- Browser.apk
+    |   |-- Calculator.apk
+    |   |-- Calendar.apk
+    |   |-- CalendarProvider.apk
+    |   |-- Camera.apk
+    |   |-- CanBusManagerService.apk
+    |   |-- CarSignalManagerService.apk
+    |   |-- CertInstaller.apk
+    |   |-- Contacts.apk
+    |   |-- ContactsProvider.apk
+    |   |-- CubeLiveWallpapers.apk
+    |   |-- DefaultContainerService.apk
+    |   |-- DeskClock.apk
+    |   |-- Development.apk
+    |   |-- DLSAudioPolicyService.apk
+    |   |-- DLSAudioService.apk
+    |   |-- DLSBluetoothService.apk
+    |   |-- DLSSettingsProvider.apk
+    |   |-- DLSStateManagerService.apk
+    |   |-- DLSTtsService.apk
+    |   |-- DownloadProvider.apk
+    |   |-- DownloadProviderUi.apk
+    |   |-- DrmProvider.apk
+    |   |-- Email.apk
+    |   |-- Exchange.apk
+    |   |-- FmRadioService.apk
+    |   |-- Gallery2.apk
+    |   |-- HTMLViewer.apk
+    |   |-- KeyChain.apk
+    |   |-- LatinIME.apk
+    |   |-- Launcher2.apk
+    |   |-- LiveWallpapers.apk
+    |   |-- LiveWallpapersPicker.apk
+    |   |-- LocationInfoService.apk
+    |   |-- MagicSmokeWallpapers.apk
+    |   |-- MediaProvider.apk
+    |   |-- Mms.apk
+    |   |-- Music.apk
+    |   |-- MusicFX.apk
+    |   |-- MusicTests.apk
+    |   |-- Notepadv3Solution.apk
+    |   |-- PackageInstaller.apk
+    |   |-- PateoMediaProvider.apk
+    |   |-- Phone.apk
+    |   |-- PhoneStateManagerService.apk
+    |   |-- PicoTts.apk
+    |   |-- PinyinIME.apk
+    |   |-- Provision.apk
+    |   |-- QuickSearchBox.apk
+    |   |-- Settings.apk
+    |   |-- SettingsProvider.apk
+    |   |-- SharedStorageBackup.apk
+    |   |-- SoundRecorder.apk
+    |   |-- SpeechRecorder.apk
+    |   |-- SystemUI.apk
+    |   |-- TBoxManagerService.apk
+    |   |-- TelephonyProvider.apk
+    |   |-- UserDictionaryProvider.apk
+    |   |-- VideoEditor.apk
+    |   |-- VisualizationWallpapers.apk
+    |   `-- VpnDialogs.apk
+    |-- bin
+    |   |-- abtfilt
+    |   |-- adb
+    |   |-- alsa_amixer
+    |   |-- alsa_aplay
+    |   |-- alsa_arecord
+    |   |-- alsa_ctl
+    |   |-- am
+    |   |-- applypatch
+    |   |-- applypatch_static
+    |   |-- app_process
+    |   |-- artagent
+    |   |-- ath6kl-fwlog-record
+    |   |-- athtestcmd
+    |   |-- audioloop
+    |   |-- BlobCache_test
+    |   |-- bluetoothd
+    |   |-- bmgr
+    |   |-- bootanimation
+    |   |-- bu
+    |   |-- bugreport
+    |   |-- busybox
+    |   |-- canbusd
+    |   |-- chat
+    |   |-- check_prereq
+    |   |-- cissvrd
+    |   |-- crashhookd
+    |   |-- csr_bt_wifi_power
+    |   |-- dalvikvm
+    |   |-- dbus-daemon
+    |   |-- debuggerd
+    |   |-- decoder
+    |   |-- dexopt
+    |   |-- dhcpcd
+    |   |-- dispd
+    |   |-- dnsmasq
+    |   |-- drmserver
+    |   |-- dumpstate
+    |   |-- dumpsys
+    |   |-- flash_image
+    |   |-- fsck_msdos
+    |   |-- gdbjithelper
+    |   |-- gdbserver
+    |   |-- gzip
+    |   |-- hciattach
+    |   |-- hostapd
+    |   |-- hostapd_cli
+    |   |-- ime
+    |   |-- input
+    |   |-- InputChannel_test
+    |   |-- InputDispatcher_test
+    |   |-- InputEvent_test
+    |   |-- InputPublisherAndConsumer_test
+    |   |-- InputReader_test
+    |   |-- installd
+    |   |-- ip
+    |   |-- ip6tables
+    |   |-- ipod-daemon-2
+    |   |-- iptables
+    |   |-- keystore
+    |   |-- keystore_cli
+    |   |-- linker
+    |   |-- logcat
+    |   |-- logwrapper
+    |   |-- Looper_test
+    |   |-- macsvrd
+    |   |-- mediaserver
+    |   |-- mke2fs
+    |   |-- mksh
+    |   |-- monkey
+    |   |-- mtpd
+    |   |-- ndc
+    |   |-- netcfg
+    |   |-- netd
+    |   |-- nvdata
+    |   |-- ObbFile_test
+    |   |-- omx_tests
+    |   |-- pand
+    |   |-- ping
+    |   |-- ping6
+    |   |-- pm
+    |   |-- powerdebug
+    |   |-- pppd
+    |   |-- psatUtil
+    |   |-- qemud
+    |   |-- qemu-props
+    |   |-- racoon
+    |   |-- radiooptions
+    |   |-- record
+    |   |-- recordvideo
+    |   |-- recovery
+    |   |-- rild
+    |   |-- run-as
+    |   |-- schedtest
+    |   |-- screencap
+    |   |-- screenshot
+    |   |-- sdcard
+    |   |-- sdptool
+    |   |-- sensorservice
+    |   |-- service
+    |   |-- servicemanager
+    |   |-- sf2
+    |   |-- showlease
+    |   |-- sigsvrd
+    |   |-- simg2img
+    |   |-- skia_test
+    |   |-- stagefright
+    |   |-- stream
+    |   |-- String8_test
+    |   |-- surfaceflinger
+    |   |-- svc
+    |   |-- synergy_service
+    |   |-- synergy_wifi_attach
+    |   |-- system_server
+    |   |-- tc
+    |   |-- testid3
+    |   |-- toolbox
+    |   |-- Unicode_test
+    |   |-- unififw
+    |   |-- updater
+    |   |-- vdc
+    |   |-- verifier_test
+    |   |-- vold
+    |   |-- wmiconfig
+    |   |-- wpa_cli
+    |   |-- wpa_supplicant
+    |   `-- ZipFileRO_test
+    |-- build.prop
+    |-- etc
+    |   |-- apns-conf.xml
+    |   |-- audio_effects.conf
+    |   |-- bluesoleil
+    |   |   |-- BtSettings.INI
+    |   |   `-- TL.INI
+    |   |-- bluetooth
+    |   |   |-- audio.conf
+    |   |   |-- auto_pairing.conf
+    |   |   |-- blacklist.conf
+    |   |   |-- input.conf
+    |   |   `-- network.conf
+    |   |-- check_wifi_mac.sh
+    |   |-- component_register
+    |   |-- contentpipe_register
+    |   |-- core_register
+    |   |-- dbus.conf
+    |   |-- dhcpcd
+    |   |   |-- dhcpcd-hooks
+    |   |   |   |-- 20-dns.conf
+    |   |   |   `-- 95-configured
+    |   |   `-- dhcpcd-run-hooks
+    |   |-- display_mode_fb0.conf
+    |   |-- display_mode_fb2.conf
+    |   |-- display_mode_fb4.conf
+    |   |-- event-log-tags
+    |   |-- fallback_fonts.xml
+    |   |-- firmware
+    |   |   |-- ath6k
+    |   |   |   `-- AR6003
+    |   |   |       |-- hw2.0
+    |   |   |       |   |-- athtcmd_ram.bin
+    |   |   |       |   |-- athwlan.bin.z77
+    |   |   |       |   |-- bdata.bin
+    |   |   |       |   |-- bdata.SD31.bin
+    |   |   |       |   |-- data.patch.bin
+    |   |   |       |   `-- otp.bin.z77
+    |   |   |       `-- hw2.1.1
+    |   |   |           |-- athtcmd_ram.bin
+    |   |   |           |-- bdata.bin
+    |   |   |           |-- fw-3.bin
+    |   |   |           |-- nullTestFlow.bin
+    |   |   |           `-- softmac
+    |   |   `-- unifi-sdio
+    |   |       |-- a10
+    |   |       |   |-- ap.xbv
+    |   |       |   `-- staonly.xbv
+    |   |       |-- mac.txt
+    |   |       `-- ufmib.dat
+    |   |-- gps
+    |   |   |-- AR1520A-Auto.img
+    |   |   |-- ingsvcd
+    |   |   |-- libOrionCtl.so
+    |   |   |-- Orion.ini
+    |   |   `-- OrionSys.so
+    |   |-- gpsreset.sh
+    |   |-- hosts
+    |   |-- init.goldfish.sh
+    |   |-- init.gprs-pppd
+    |   |-- media_profiles.xml
+    |   |-- mkshrc
+    |   |-- NOTICE.html.gz
+    |   |-- ota.conf
+    |   |-- permissions
+    |   |   |-- com.android.location.provider.xml
+    |   |   |-- platform.xml
+    |   |   `-- required_hardware.xml
+    |   |-- ppp
+    |   |   |-- ip-down-ppp0
+    |   |   |-- ip-up-ppp0
+    |   |   `-- ip-up-vpn
+    |   |-- security
+    |   |   |-- cacerts
+    |   |   |   |-- 00673b5b.0
+    |   |   |   |-- 03e16f6c.0
+    |   |   |   |-- 08aef7bb.0
+    |   |   |   |-- 0d188d89.0
+    |   |   |   |-- 10531352.0
+    |   |   |   |-- 111e6273.0
+    |   |   |   |-- 1155c94b.0
+    |   |   |   |-- 119afc2e.0
+    |   |   |   |-- 11a09b38.0
+    |   |   |   |-- 12d55845.0
+    |   |   |   |-- 17b51fe6.0
+    |   |   |   |-- 1920cacb.0
+    |   |   |   |-- 1dac3003.0
+    |   |   |   |-- 1dbdda5b.0
+    |   |   |   |-- 1dcd6f4c.0
+    |   |   |   |-- 1df5ec47.0
+    |   |   |   |-- 1e8e7201.0
+    |   |   |   |-- 1eb37bdf.0
+    |   |   |   |-- 219d9499.0
+    |   |   |   |-- 23f4c490.0
+    |   |   |   |-- 27af790d.0
+    |   |   |   |-- 2afc57aa.0
+    |   |   |   |-- 2e8714cb.0
+    |   |   |   |-- 2fa87019.0
+    |   |   |   |-- 2fb1850a.0
+    |   |   |   |-- 33815e15.0
+    |   |   |   |-- 343eb6cb.0
+    |   |   |   |-- 399e7759.0
+    |   |   |   |-- 3a3b02ce.0
+    |   |   |   |-- 3ad48a91.0
+    |   |   |   |-- 3c58f906.0
+    |   |   |   |-- 3c860d51.0
+    |   |   |   |-- 3d441de8.0
+    |   |   |   |-- 3e7271e8.0
+    |   |   |   |-- 418595b9.0
+    |   |   |   |-- 455f1b52.0
+    |   |   |   |-- 46b2fd3b.0
+    |   |   |   |-- 48478734.0
+    |   |   |   |-- 4d654d1d.0
+    |   |   |   |-- 4e18c148.0
+    |   |   |   |-- 4fbd6bfa.0
+    |   |   |   |-- 5021a0a2.0
+    |   |   |   |-- 5046c355.0
+    |   |   |   |-- 524d9b43.0
+    |   |   |   |-- 56b8a0b6.0
+    |   |   |   |-- 57692373.0
+    |   |   |   |-- 58a44af1.0
+    |   |   |   |-- 594f1775.0
+    |   |   |   |-- 5a3f0ff8.0
+    |   |   |   |-- 5a5372fc.0
+    |   |   |   |-- 5cf9d536.0
+    |   |   |   |-- 5e4e69e7.0
+    |   |   |   |-- 60afe812.0
+    |   |   |   |-- 635ccfd5.0
+    |   |   |   |-- 67495436.0
+    |   |   |   |-- 69105f4f.0
+    |   |   |   |-- 6adf0799.0
+    |   |   |   |-- 6e8bf996.0
+    |   |   |   |-- 6fcc125d.0
+    |   |   |   |-- 72f369af.0
+    |   |   |   |-- 72fa7371.0
+    |   |   |   |-- 74c26bd0.0
+    |   |   |   |-- 75680d2e.0
+    |   |   |   |-- 7651b327.0
+    |   |   |   |-- 76579174.0
+    |   |   |   |-- 7999be0d.0
+    |   |   |   |-- 7a481e66.0
+    |   |   |   |-- 7a819ef2.0
+    |   |   |   |-- 7d3cd826.0
+    |   |   |   |-- 7d453d8f.0
+    |   |   |   |-- 81b9768f.0
+    |   |   |   |-- 8470719d.0
+    |   |   |   |-- 84cba82f.0
+    |   |   |   |-- 85cde254.0
+    |   |   |   |-- 86212b19.0
+    |   |   |   |-- 87753b0d.0
+    |   |   |   |-- 882de061.0
+    |   |   |   |-- 895cad1a.0
+    |   |   |   |-- 89c02a45.0
+    |   |   |   |-- 8f7b96c4.0
+    |   |   |   |-- 9339512a.0
+    |   |   |   |-- 95aff9e3.0
+    |   |   |   |-- 9685a493.0
+    |   |   |   |-- 9772ca32.0
+    |   |   |   |-- 9d6523ce.0
+    |   |   |   |-- 9dbefe7b.0
+    |   |   |   |-- 9f533518.0
+    |   |   |   |-- a0bc6fbb.0
+    |   |   |   |-- a15b3b6b.0
+    |   |   |   |-- a3896b44.0
+    |   |   |   |-- a7605362.0
+    |   |   |   |-- a7d2cf64.0
+    |   |   |   |-- ab5346f4.0
+    |   |   |   |-- add67345.0
+    |   |   |   |-- b0f3e76e.0
+    |   |   |   |-- b7db1890.0
+    |   |   |   |-- bc3f2570.0
+    |   |   |   |-- bcdd5959.0
+    |   |   |   |-- bda4cc84.0
+    |   |   |   |-- bdacca6f.0
+    |   |   |   |-- bf64f35b.0
+    |   |   |   |-- c215bc69.0
+    |   |   |   |-- c33a80d4.0
+    |   |   |   |-- c527e4ab.0
+    |   |   |   |-- c7e2a638.0
+    |   |   |   |-- c8763593.0
+    |   |   |   |-- ccc52f49.0
+    |   |   |   |-- cdaebb72.0
+    |   |   |   |-- cf701eeb.0
+    |   |   |   |-- d16a5865.0
+    |   |   |   |-- d537fba6.0
+    |   |   |   |-- d64f06f3.0
+    |   |   |   |-- d777342d.0
+    |   |   |   |-- d8274e24.0
+    |   |   |   |-- dbc54cab.0
+    |   |   |   |-- ddc328ff.0
+    |   |   |   |-- e48193cf.0
+    |   |   |   |-- e60bf0c0.0
+    |   |   |   |-- e775ed2d.0
+    |   |   |   |-- e7b8d656.0
+    |   |   |   |-- e8651083.0
+    |   |   |   |-- ea169617.0
+    |   |   |   |-- eb375c3e.0
+    |   |   |   |-- ed049835.0
+    |   |   |   |-- ed524cf5.0
+    |   |   |   |-- ee7cd6fb.0
+    |   |   |   |-- f4996e82.0
+    |   |   |   |-- f58a60fe.0
+    |   |   |   |-- f61bff45.0
+    |   |   |   |-- f80cc7f6.0
+    |   |   |   |-- fac084d7.0
+    |   |   |   |-- facacbc6.0
+    |   |   |   |-- fde84897.0
+    |   |   |   `-- ff783690.0
+    |   |   `-- otacerts.zip
+    |   |-- system_fonts.xml
+    |   |-- vold.fstab
+    |   `-- wifi
+    |       `-- wpa_supplicant.conf
+    |-- fonts
+    |   |-- AndroidClock_Highlight.ttf
+    |   |-- AndroidClock_Solid.ttf
+    |   |-- AndroidClock.ttf
+    |   |-- Clockopia.ttf
+    |   |-- DroidNaskh-Regular.ttf
+    |   |-- DroidSansArmenian.ttf
+    |   |-- DroidSansEthiopic-Regular.ttf
+    |   |-- DroidSansFallback.ttf
+    |   |-- DroidSansGeorgian.ttf
+    |   |-- DroidSansHebrew-Bold.ttf
+    |   |-- DroidSansHebrew-Regular.ttf
+    |   |-- DroidSansMono.ttf
+    |   |-- DroidSansThai.ttf
+    |   |-- DroidSerif-BoldItalic.ttf
+    |   |-- DroidSerif-Bold.ttf
+    |   |-- DroidSerif-Italic.ttf
+    |   |-- DroidSerif-Regular.ttf
+    |   |-- Lohit-Bengali.ttf
+    |   |-- Lohit-Devanagari.ttf
+    |   |-- Lohit-Tamil.ttf
+    |   |-- Roboto-BoldItalic.ttf
+    |   |-- Roboto-Bold.ttf
+    |   |-- Roboto-Italic.ttf
+    |   `-- Roboto-Regular.ttf
+    |-- framework
+    |   |-- am.jar
+    |   |-- android.policy.jar
+    |   |-- android.test.runner.jar
+    |   |-- apache-xml.jar
+    |   |-- bmgr.jar
+    |   |-- bouncycastle.jar
+    |   |-- bu.jar
+    |   |-- com.android.location.provider.jar
+    |   |-- core.jar
+    |   |-- core-junit.jar
+    |   |-- dls.jar
+    |   |-- ext.jar
+    |   |-- filterfw.jar
+    |   |-- framework.jar
+    |   |-- framework-res.apk
+    |   |-- ime.jar
+    |   |-- input.jar
+    |   |-- javax.obex.jar
+    |   |-- monkey.jar
+    |   |-- pm.jar
+    |   |-- services.jar
+    |   `-- svc.jar
+    |-- lib
+    |   |-- bluez-plugin
+    |   |   |-- audio.so
+    |   |   |-- input.so
+    |   |   `-- network.so
+    |   |-- drm
+    |   |   `-- libdrmpassthruplugin.so
+    |   |-- egl
+    |   |   |-- egl.cfg
+    |   |   |-- libEGL_VIVANTE.so
+    |   |   |-- libGLES_android.so
+    |   |   |-- libGLESv1_CM_VIVANTE.so
+    |   |   `-- libGLESv2_VIVANTE.so
+    |   |-- firmware
+    |   |   |-- ar3k
+    |   |   |   `-- 30101
+    |   |   |       |-- ar3kbdaddr.pst
+    |   |   |       |-- PS_ASIC.pst
+    |   |   |       `-- RamPatch.txt
+    |   |   `-- vpu
+    |   |       |-- vpu_fw_imx6d.bin
+    |   |       `-- vpu_fw_imx6q.bin
+    |   |-- hw
+    |   |   |-- acoustics.default.so
+    |   |   |-- alsa.default.so
+    |   |   |-- alsa.freescale.so
+    |   |   |-- audio.legacy.freescale.so
+    |   |   |-- audio_policy.default.so
+    |   |   |-- audio.primary.default.so
+    |   |   |-- audio.primary.freescale.so
+    |   |   |-- audio.tinyalsa.freescale.so
+    |   |   |-- bttty.ko
+    |   |   |-- camera.goldfish.so
+    |   |   |-- camera.imx6.so
+    |   |   |-- gps.freescale.so
+    |   |   |-- gps.goldfish.so
+    |   |   |-- gralloc.default.so
+    |   |   |-- gralloc.imx6.so
+    |   |   |-- gralloc_viv.imx6.so
+    |   |   |-- hwcomposer.imx6.so
+    |   |   |-- hwcomposer_viv.imx6.so
+    |   |   |-- lights.default.so
+    |   |   |-- lights.freescale.so
+    |   |   |-- lights.goldfish.so
+    |   |   |-- sensors.freescale.so
+    |   |   `-- sensors.goldfish.so
+    |   |-- invoke_mock_media_player.so
+    |   |-- lib_aac_dec_v2_arm12_elinux.so
+    |   |-- lib_aac_parser_arm11_elinux.so
+    |   |-- libalsa-jni.so
+    |   |-- lib_amr_parser_arm11_elinux.3.0.so
+    |   |-- libandroid_runtime.so
+    |   |-- libandroid_servers.so
+    |   |-- libandroid.so
+    |   |-- libasound.so
+    |   |-- libaudioeffect_jni.so
+    |   |-- libaudioflinger.so
+    |   |-- libaudiopolicy_jni.so
+    |   |-- libaudiopolicy.so
+    |   |-- libaudio.so
+    |   |-- libaudioutils.so
+    |   |-- libaudiowrapper.so
+    |   |-- lib_avi_parser_arm11_elinux.3.0.so
+    |   |-- libbcc.so
+    |   |-- libbcc.so.sha1
+    |   |-- libbcinfo.so
+    |   |-- libbcspif.so
+    |   |-- libbinder.so
+    |   |-- libbluedroid.so
+    |   |-- libbluelet.so
+    |   |-- libbluetoothd.so
+    |   |-- libbluetooth.so
+    |   |-- libbtio.so
+    |   |-- libcamera_client.so
+    |   |-- libcameraservice.so
+    |   |-- libcanbus.so
+    |   |-- libchromium_net.so
+    |   |-- libclcore.bc
+    |   |-- libc_malloc_debug_leak.so
+    |   |-- libc_malloc_debug_qemu.so
+    |   |-- libcrypto.so
+    |   |-- libc.so
+    |   |-- libctest.so
+    |   |-- libcutils.so
+    |   |-- libdbus.so
+    |   |-- libdefcontainer_jni.so
+    |   |-- libdiskconfig.so
+    |   |-- libdls_airconditioner_jni.so
+    |   |-- libdls_bluetooth_jni.so
+    |   |-- libdls_canbus_jni.so
+    |   |-- libdls_carsignal_jni.so
+    |   |-- libdls_jni.so
+    |   |-- libdls_media_jni.so
+    |   |-- libdl.so
+    |   |-- libdls_tbox_jni.so
+    |   |-- libdrm1_jni.so
+    |   |-- libdrm1.so
+    |   |-- libdrmframework_jni.so
+    |   |-- libdrmframework.so
+    |   |-- libdvm.so
+    |   |-- libefence.so
+    |   |-- libeffects.so
+    |   |-- libEGL.so
+    |   |-- libemoji.so
+    |   |-- libETC1.so
+    |   |-- libexif.so
+    |   |-- libexpat.so
+    |   |-- libext2_blkid.so
+    |   |-- libext2_com_err.so
+    |   |-- libext2_e2p.so
+    |   |-- libext2fs.so
+    |   |-- libext2_profile.so
+    |   |-- libext2_uuid.so
+    |   |-- libext4_utils.so
+    |   |-- lib_ffmpeg_arm11_elinux.so
+    |   |-- libffmpeg_jni.so
+    |   |-- libffmpeg.so
+    |   |-- libFFTEm.so
+    |   |-- libfilterfw.so
+    |   |-- libfilterpack_imageproc.so
+    |   |-- lib_flac_dec_v2_arm11_elinux.so
+    |   |-- lib_flac_parser_arm11_elinux.so
+    |   |-- lib_flv_parser_arm11_elinux.3.0.so
+    |   |-- libfmrx_jni.so
+    |   |-- libfm.so
+    |   |-- libfsl_jpeg_enc_arm11_elinux.so
+    |   |-- libfsl_xmltool.so
+    |   |-- libfwdlockengine.so
+    |   |-- lib_g.711_dec_arm11_elinux.so
+    |   |-- lib_g.711_enc_arm11_elinux.so
+    |   |-- lib_g.723.1_dec_arm11_elinux.so
+    |   |-- lib_g.723.1_enc_arm11_elinux.so
+    |   |-- lib_g.726_dec_arm11_elinux.so
+    |   |-- lib_g.726_enc_arm11_elinux.so
+    |   |-- lib_g.729ab_dec_arm11_elinux.so
+    |   |-- lib_g.729ab_enc_arm11_elinux.so
+    |   |-- libgabi++.so
+    |   |-- libGAL.so
+    |   |-- libGLESv1_CM.so
+    |   |-- libGLESv2_dbg.so
+    |   |-- libGLESv2.so
+    |   |-- libglib.so
+    |   |-- libGLSLC.so
+    |   |-- libgui.so
+    |   |-- libgyro_jni.so
+    |   |-- lib_H263_dec_v2_arm11_elinux.so
+    |   |-- libhardware_legacy.so
+    |   |-- libhardware.so
+    |   |-- libharfbuzz.so
+    |   |-- libhwui.so
+    |   |-- libicui18n.so
+    |   |-- libicuuc.so
+    |   |-- lib_id3_parser_arm11_elinux.so
+    |   |-- libinput.so
+    |   |-- libiprouteutil.so
+    |   |-- libjnigraphics.so
+    |   |-- libjni_latinime.so
+    |   |-- libjni_mosaic.so
+    |   |-- libjni_pinyinime.so
+    |   |-- libjpeg.so
+    |   |-- liblog.so
+    |   |-- libmedia_jni.so
+    |   |-- libmediaplayerservice.so
+    |   |-- libmedia.so
+    |   |-- lib_mkv_parser_arm11_elinux.3.0.so
+    |   |-- lib_mp3_dec_v2_arm12_elinux.so
+    |   |-- lib_mp3_enc_v2_arm12_elinux.so
+    |   |-- lib_mp3_parser_v2_arm11_elinux.so
+    |   |-- lib_mp4_muxer_arm11_elinux.so
+    |   |-- lib_mp4_parser_arm11_elinux.3.0.so
+    |   |-- lib_mpg2_parser_arm11_elinux.3.0.so
+    |   |-- libm.so
+    |   |-- libmtp.so
+    |   |-- libnativehelper.so
+    |   |-- lib_nb_amr_dec_v2_arm9_elinux.so
+    |   |-- lib_nb_amr_enc_v2_arm11_elinux.so
+    |   |-- libnetlink.so
+    |   |-- libnetutils.so
+    |   |-- libnfc_ndef.so
+    |   |-- libnvram.so
+    |   |-- lib_ogg_parser_arm11_elinux.3.0.so
+    |   |-- lib_oggvorbis_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_aac_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_aac_enc_v2_arm11_elinux.so
+    |   |-- lib_omx_aac_parser_v2_arm11_elinux.so
+    |   |-- lib_omx_ac3_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_amr_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_amr_enc_v2_arm11_elinux.so
+    |   |-- lib_omx_android_audio_render_arm11_elinux.so
+    |   |-- lib_omx_android_audio_source_arm11_elinux.so
+    |   |-- lib_omx_audio_fake_render_arm11_elinux.so
+    |   |-- lib_omx_audio_processor_v2_arm11_elinux.so
+    |   |-- lib_omx_camera_source_arm11_elinux.so
+    |   |-- lib_omx_client_arm11_elinux.so
+    |   |-- lib_omx_clock_v2_arm11_elinux.so
+    |   |-- lib_omx_common_v2_arm11_elinux.so
+    |   |-- lib_omx_core_mgr_v2_arm11_elinux.so
+    |   |-- lib_omx_core_v2_arm11_elinux.so
+    |   |-- lib_omx_flac_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_flac_parser_v2_arm11_elinux.so
+    |   |-- lib_omx_fsl_muxer_v2_arm11_elinux.so
+    |   |-- lib_omx_fsl_parser_v2_arm11_elinux.so
+    |   |-- lib_omx_https_pipe_v2_arm11_elinux.so
+    |   |-- lib_omx_ipulib_render_arm11_elinux.so
+    |   |-- lib_omx_local_file_pipe_v2_arm11_elinux.so
+    |   |-- lib_omx_mp3_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_mp3_enc_v2_arm11_elinux.so
+    |   |-- lib_omx_mp3_parser_v2_arm11_elinux.so
+    |   |-- lib_omx_osal_v2_arm11_elinux.so
+    |   |-- lib_omx_pcm_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_player_arm11_elinux.so
+    |   |-- lib_omx_res_mgr_v2_arm11_elinux.so
+    |   |-- lib_omx_shared_fd_pipe_arm11_elinux.so
+    |   |-- lib_omx_sorenson_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_streaming_parser_arm11_elinux.so
+    |   |-- lib_omx_surface_render_arm11_elinux.so
+    |   |-- lib_omx_utils_v2_arm11_elinux.so
+    |   |-- lib_omx_vorbis_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_vpu_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_vpu_enc_v2_arm11_elinux.so
+    |   |-- lib_omx_wav_parser_v2_arm11_elinux.so
+    |   |-- lib_omx_wma_dec_v2_arm11_elinux.so
+    |   |-- lib_omx_wmv_dec_v2_arm11_elinux.so
+    |   |-- libOpenMAXAL.so
+    |   |-- libOpenSLES.so
+    |   |-- libpagemap.so
+    |   |-- libpateouevent.so
+    |   |-- lib_peq_v2_arm11_elinux.so
+    |   |-- libpixelflinger.so
+    |   |-- libpowermanager.so
+    |   |-- libpower.so
+    |   |-- libreference-canbus.so
+    |   |-- libreference-ril.so
+    |   |-- libreference-ril-zte.so
+    |   |-- libril.so
+    |   |-- librs_jni.so
+    |   |-- libRS.so
+    |   |-- librtp_jni.so
+    |   |-- libruntime-ril-port.so
+    |   |-- libsensorservice.so
+    |   |-- libskia.so
+    |   |-- libsonivox.so
+    |   |-- libsoundpool.so
+    |   |-- libspeexresampler.so
+    |   |-- libsqlite_jni.so
+    |   |-- libsqlite.so
+    |   |-- libSR_AudioIn.so
+    |   |-- libsrec_jni.so
+    |   |-- libssl.so
+    |   |-- libstagefright_amrnb_common.so
+    |   |-- libstagefright_avc_common.so
+    |   |-- libstagefright_enc_common.so
+    |   |-- libstagefright_foundation.so
+    |   |-- libstagefrighthw.so
+    |   |-- libstagefright_omx.so
+    |   |-- libstagefright.so
+    |   |-- libstagefright_soft_aacdec.so
+    |   |-- libstagefright_soft_amrdec.so
+    |   |-- libstagefright_soft_g711dec.so
+    |   |-- libstagefright_soft_h264dec.so
+    |   |-- libstagefright_soft_mp3dec.so
+    |   |-- libstagefright_soft_mpeg4dec.so
+    |   |-- libstagefright_soft_vorbisdec.so
+    |   |-- libstagefright_soft_vpxdec.so
+    |   |-- libstagefright_yuv.so
+    |   |-- libstdc++.so
+    |   |-- libstlport.so
+    |   |-- libsurfaceflinger_client.so
+    |   |-- libsurfaceflinger.so
+    |   |-- libsynergy_com.so
+    |   |-- libsystem_server.so
+    |   |-- libsysutils.so
+    |   |-- libthread_db.so
+    |   |-- libtinyalsa.so
+    |   |-- libttscompat.so
+    |   |-- libtts_iflytek_synthproxy.so
+    |   |-- libTTS_jni.so
+    |   |-- libttspico.so
+    |   |-- libui.so
+    |   |-- libusbhost.so
+    |   |-- libusb.so
+    |   |-- libutils.so
+    |   |-- libvariablespeed.so
+    |   |-- libvideoeditor_jni.so
+    |   |-- libvideoeditorplayer.so
+    |   |-- libvideowrapper.so
+    |   |-- libvorbisidec.so
+    |   |-- libvpu.so
+    |   |-- lib_vpu_wrapper.so
+    |   |-- libvspeed_jni.so
+    |   |-- lib_wav_parser_arm11_elinux.so
+    |   |-- lib_wb_amr_dec_arm9_elinux.so
+    |   |-- lib_wb_amr_enc_arm11_elinux.so
+    |   |-- libwebcore.so
+    |   |-- libwebrtc_audio_preprocessing.so
+    |   |-- libwilhelm.so
+    |   |-- libwpa_client.so
+    |   |-- libwrs_ipod_2_jni.so
+    |   |-- libwrs-ipod-2.so
+    |   |-- libz.so
+    |   |-- modules
+    |   |   |-- ath6kl_sdio.ko
+    |   |   |-- cfg80211.ko
+    |   |   |-- compat.ko
+    |   |   `-- unifi_sdio.ko
+    |   |-- Resource.irf
+    |   `-- soundfx
+    |       |-- libaudiopreprocessing.so
+    |       |-- libbundlewrapper.so
+    |       |-- libreverbwrapper.so
+    |       `-- libvisualizer.so
+    |-- media
+    |   `-- audio
+    |       |-- alarms
+    |       |   |-- Alarm_Beep_01.ogg
+    |       |   |-- Alarm_Beep_02.ogg
+    |       |   |-- Alarm_Beep_03.ogg
+    |       |   |-- Alarm_Buzzer.ogg
+    |       |   |-- Alarm_Classic.ogg
+    |       |   |-- Alarm_Rooster_02.ogg
+    |       |   |-- Barium.ogg
+    |       |   |-- Cesium.ogg
+    |       |   |-- Plutonium.ogg
+    |       |   `-- Scandium.ogg
+    |       |-- notifications
+    |       |   |-- Aldebaran.ogg
+    |       |   |-- Altair.ogg
+    |       |   |-- Antares.ogg
+    |       |   |-- Antimony.ogg
+    |       |   |-- arcturus.ogg
+    |       |   |-- Argon.ogg
+    |       |   |-- Beat_Box_Android.ogg
+    |       |   |-- Beryllium.ogg
+    |       |   |-- Betelgeuse.ogg
+    |       |   |-- CaffeineSnake.ogg
+    |       |   |-- Canopus.ogg
+    |       |   |-- Capella.ogg
+    |       |   |-- Castor.ogg
+    |       |   |-- CetiAlpha.ogg
+    |       |   |-- Cobalt.ogg
+    |       |   |-- Cricket.ogg
+    |       |   |-- DearDeer.ogg
+    |       |   |-- Deneb.ogg
+    |       |   |-- Doink.ogg
+    |       |   |-- DontPanic.ogg
+    |       |   |-- Drip.ogg
+    |       |   |-- Electra.ogg
+    |       |   |-- F1_MissedCall.ogg
+    |       |   |-- F1_New_MMS.ogg
+    |       |   |-- F1_New_SMS.ogg
+    |       |   |-- Fluorine.ogg
+    |       |   |-- Fomalhaut.ogg
+    |       |   |-- Gallium.ogg
+    |       |   |-- Heaven.ogg
+    |       |   |-- Helium.ogg
+    |       |   |-- Highwire.ogg
+    |       |   |-- Iridium.ogg
+    |       |   |-- Krypton.ogg
+    |       |   |-- KzurbSonar.ogg
+    |       |   |-- Merope.ogg
+    |       |   |-- moonbeam.ogg
+    |       |   |-- OnTheHunt.ogg
+    |       |   |-- Palladium.ogg
+    |       |   |-- pixiedust.ogg
+    |       |   |-- pizzicato.ogg
+    |       |   |-- Plastic_Pipe.ogg
+    |       |   |-- Polaris.ogg
+    |       |   |-- Pollux.ogg
+    |       |   |-- Procyon.ogg
+    |       |   |-- Radon.ogg
+    |       |   |-- regulus.ogg
+    |       |   |-- Rubidium.ogg
+    |       |   |-- Selenium.ogg
+    |       |   |-- sirius.ogg
+    |       |   |-- Sirrah.ogg
+    |       |   |-- SpaceSeed.ogg
+    |       |   |-- Strontium.ogg
+    |       |   |-- TaDa.ogg
+    |       |   |-- Thallium.ogg
+    |       |   |-- Tinkerbell.ogg
+    |       |   |-- tweeters.ogg
+    |       |   |-- vega.ogg
+    |       |   |-- Voila.ogg
+    |       |   |-- Xenon.ogg
+    |       |   `-- Zirconium.ogg
+    |       |-- ringtones
+    |       |   |-- ANDROMEDA.ogg
+    |       |   |-- Aquila.ogg
+    |       |   |-- ArgoNavis.ogg
+    |       |   |-- Backroad.ogg
+    |       |   |-- BeatPlucker.ogg
+    |       |   |-- BentleyDubs.ogg
+    |       |   |-- Big_Easy.ogg
+    |       |   |-- BirdLoop.ogg
+    |       |   |-- Bollywood.ogg
+    |       |   |-- BOOTES.ogg
+    |       |   |-- boot.wav
+    |       |   |-- BussaMove.ogg
+    |       |   |-- Cairo.ogg
+    |       |   |-- Calypso_Steel.ogg
+    |       |   |-- CANISMAJOR.ogg
+    |       |   |-- CaribbeanIce.ogg
+    |       |   |-- Carina.ogg
+    |       |   |-- CASSIOPEIA.ogg
+    |       |   |-- Centaurus.ogg
+    |       |   |-- Champagne_Edition.ogg
+    |       |   |-- Club_Cubano.ogg
+    |       |   |-- CrayonRock.ogg
+    |       |   |-- CrazyDream.ogg
+    |       |   |-- CurveBall.ogg
+    |       |   |-- Cygnus.ogg
+    |       |   |-- DancinFool.ogg
+    |       |   |-- Ding.ogg
+    |       |   |-- DonMessWivIt.ogg
+    |       |   |-- Draco.ogg
+    |       |   |-- DreamTheme.ogg
+    |       |   |-- Eastern_Sky.ogg
+    |       |   |-- Enter_the_Nexus.ogg
+    |       |   |-- Eridani.ogg
+    |       |   |-- EtherShake.ogg
+    |       |   |-- FreeFlight.ogg
+    |       |   |-- FriendlyGhost.ogg
+    |       |   |-- Funk_Yall.ogg
+    |       |   |-- GameOverGuitar.ogg
+    |       |   |-- Gimme_Mo_Town.ogg
+    |       |   |-- Glacial_Groove.ogg
+    |       |   |-- Growl.ogg
+    |       |   |-- HalfwayHome.ogg
+    |       |   |-- hydra.ogg
+    |       |   |-- InsertCoin.ogg
+    |       |   |-- LoopyLounge.ogg
+    |       |   |-- LoveFlute.ogg
+    |       |   |-- Lyra.ogg
+    |       |   |-- Machina.ogg
+    |       |   |-- MidEvilJaunt.ogg
+    |       |   |-- MildlyAlarming.ogg
+    |       |   |-- Nairobi.ogg
+    |       |   |-- Nassau.ogg
+    |       |   |-- NewPlayer.ogg
+    |       |   |-- Noises1.ogg
+    |       |   |-- Noises2.ogg
+    |       |   |-- Noises3.ogg
+    |       |   |-- No_Limits.ogg
+    |       |   |-- OrganDub.ogg
+    |       |   |-- Orion.ogg
+    |       |   |-- Paradise_Island.ogg
+    |       |   |-- Pegasus.ogg
+    |       |   |-- PERSEUS.ogg
+    |       |   |-- Playa.ogg
+    |       |   |-- Pyxis.ogg
+    |       |   |-- Revelation.ogg
+    |       |   |-- Rigel.ogg
+    |       |   |-- Ring_Classic_02.ogg
+    |       |   |-- Ring_Digital_02.ogg
+    |       |   |-- Ring_Synth_02.ogg
+    |       |   |-- Ring_Synth_04.ogg
+    |       |   |-- Road_Trip.ogg
+    |       |   |-- RomancingTheTone.ogg
+    |       |   |-- Safari.ogg
+    |       |   |-- Savannah.ogg
+    |       |   |-- Scarabaeus.ogg
+    |       |   |-- Sceptrum.ogg
+    |       |   |-- Seville.ogg
+    |       |   |-- Shes_All_That.ogg
+    |       |   |-- SilkyWay.ogg
+    |       |   |-- SitarVsSitar.ogg
+    |       |   |-- Solarium.ogg
+    |       |   |-- SpringyJalopy.ogg
+    |       |   |-- Steppin_Out.ogg
+    |       |   |-- Terminated.ogg
+    |       |   |-- Testudo.ogg
+    |       |   |-- Third_Eye.ogg
+    |       |   |-- Thunderfoot.ogg
+    |       |   |-- TwirlAway.ogg
+    |       |   |-- URSAMINOR.ogg
+    |       |   |-- VeryAlarmed.ogg
+    |       |   |-- Vespa.ogg
+    |       |   `-- World.ogg
+    |       `-- ui
+    |           |-- camera_click.ogg
+    |           |-- camera_focus.ogg
+    |           |-- Dock.ogg
+    |           |-- Effect_Tick.ogg
+    |           |-- KeypressDelete.ogg
+    |           |-- KeypressReturn.ogg
+    |           |-- KeypressSpacebar.ogg
+    |           |-- KeypressStandard.ogg
+    |           |-- Lock.ogg
+    |           |-- LowBattery.ogg
+    |           |-- Undock.ogg
+    |           |-- Unlock.ogg
+    |           `-- VideoRecord.ogg
+    |-- usr
+    |   |-- icu
+    |   |   `-- icudt46l.dat
+    |   |-- idc
+    |   |   |-- Dell_Dell_USB_Keyboard.idc
+    |   |   |-- eGalax_Touch_Screen.idc
+    |   |   |-- HannStar_P1003_Touchscreen.idc
+    |   |   |-- qwerty2.idc
+    |   |   `-- qwerty.idc
+    |   |-- keychars
+    |   |   |-- Generic.kcm
+    |   |   |-- qwerty2.kcm
+    |   |   |-- qwerty.kcm
+    |   |   `-- Virtual.kcm
+    |   |-- keylayout
+    |   |   |-- AVRCP.kl
+    |   |   |-- cis-keypad.kl
+    |   |   |-- Dell_Dell_USB_Keyboard.kl
+    |   |   |-- Generic.kl
+    |   |   |-- qwerty.kl
+    |   |   |-- Vendor_045e_Product_028e.kl
+    |   |   |-- Vendor_046d_Product_c216.kl
+    |   |   |-- Vendor_046d_Product_c294.kl
+    |   |   |-- Vendor_046d_Product_c299.kl
+    |   |   |-- Vendor_046d_Product_c532.kl
+    |   |   |-- Vendor_054c_Product_0268.kl
+    |   |   |-- Vendor_05ac_Product_0239.kl
+    |   |   `-- Vendor_22b8_Product_093d.kl
+    |   |-- share
+    |   |   |-- alsa
+    |   |   |   |-- alsa.conf
+    |   |   |   |-- cards
+    |   |   |   |   `-- aliases.conf
+    |   |   |   `-- pcm
+    |   |   |       |-- center_lfe.conf
+    |   |   |       |-- default.conf
+    |   |   |       |-- dmix.conf
+    |   |   |       |-- dpl.conf
+    |   |   |       |-- dsnoop.conf
+    |   |   |       |-- front.conf
+    |   |   |       |-- iec958.conf
+    |   |   |       |-- modem.conf
+    |   |   |       |-- rear.conf
+    |   |   |       |-- side.conf
+    |   |   |       |-- surround40.conf
+    |   |   |       |-- surround41.conf
+    |   |   |       |-- surround50.conf
+    |   |   |       |-- surround51.conf
+    |   |   |       `-- surround71.conf
+    |   |   |-- bmd
+    |   |   |   |-- RFFspeed_501.bmd
+    |   |   |   `-- RFFstd_501.bmd
+    |   |   `-- zoneinfo
+    |   |       |-- zoneinfo.dat
+    |   |       |-- zoneinfo.idx
+    |   |       `-- zoneinfo.version
+    |   `-- srec
+    |       `-- config
+    |           `-- en.us
+    |               |-- baseline11k.par
+    |               |-- baseline8k.par
+    |               |-- baseline.par
+    |               |-- dictionary
+    |               |   |-- basic.ok
+    |               |   |-- cmu6plus.ok.zip
+    |               |   `-- enroll.ok
+    |               |-- g2p
+    |               |   `-- en-US-ttp.data
+    |               |-- grammars
+    |               |   |-- boolean.g2g
+    |               |   |-- phone_type_choice.g2g
+    |               |   `-- VoiceDialer.g2g
+    |               `-- models
+    |                   |-- generic11_f.swimdl
+    |                   |-- generic11.lda
+    |                   |-- generic11_m.swimdl
+    |                   |-- generic8_f.swimdl
+    |                   |-- generic8.lda
+    |                   |-- generic8_m.swimdl
+    |                   `-- generic.swiarb
+    `-- xbin
+        |-- add-property-tag
+        |-- agent
+        |-- attest
+        |-- avinfo
+        |-- avtest
+        |-- bdaddr
+        |-- btool
+        |-- bttest
+        |-- check-lost+found
+        |-- cpueater
+        |-- daemonize
+        |-- dbus-monitor
+        |-- dbus-send
+        |-- dexdump
+        |-- directiotest
+        |-- hciconfig
+        |-- hcidump
+        |-- hcitool
+        |-- hstest
+        |-- l2ping
+        |-- l2test
+        |-- latencytop
+        |-- librank
+        |-- lmptest
+        |-- micro_bench
+        |-- nc
+        |-- netperf
+        |-- netserver
+        |-- opcontrol
+        |-- oprofiled
+        |-- procmem
+        |-- procrank
+        |-- rawbu
+        |-- rctest
+        |-- rfcomm
+        |-- sane_schedstat
+        |-- scotest
+        |-- scp
+        |-- sdptest
+        |-- showmap
+        |-- showslab
+        |-- sqlite3
+        |-- ssh
+        |-- strace
+        |-- su
+        |-- tcpdump
+        `-- timeinfo
+
+66 directories, 1025 files
+simba@NJ-02870:~/projects/as21/a1001eh/kernel$ 

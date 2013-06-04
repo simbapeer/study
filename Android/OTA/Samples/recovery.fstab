@@ -1,0 +1,18 @@
+/boot   	emmc	/dev/block/mmcblk0p1
+/sdcard 	vfat	/dev/block/mmcblk0p4
+/recovery 	emmc	/dev/block/mmcblk0p2
+/system 	ext4	/dev/block/mmcblk0p5
+/cache 		ext4	/dev/block/mmcblk0p6
+/data 		ext4	/dev/block/mmcblk0p7
+/misc  		emmc	/dev/block/mmcblk0p9
+
+
+#/dev/block/mmcblk0p1               1         512       16383+ 83 Linux
+#/dev/block/mmcblk0p2             513         768        8192  83 Linux
+#/dev/block/mmcblk0p3             769       92672     2940928   5 Extended
+#/dev/block/mmcblk0p4           92673      485632    12574720   b Win95 FAT32
+#/dev/block/mmcblk0p5             769       17152      524287+ 83 Linux
+#/dev/block/mmcblk0p6           17153       25344      262143+ 83 Linux
+#/dev/block/mmcblk0p7           25345       90880     2097151+ 83 Linux
+#/dev/block/mmcblk0p8           90881       91136        8191+ 83 Linux
+#/dev/block/mmcblk0p9           91137       91392        8191+ 83 Linux

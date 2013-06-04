@@ -1,0 +1,252 @@
+分析Recovery流程，可从分析升级包入手。
+升级包可由 make otapackage命令生成，由Makefile和打包脚本(Python)配合生成。
+生成规则比较复杂，其中包含了签名过程，细节不表，主要关注它的内容。
+升级包解压后结构如下：
+######################
+simba@NJ-02870:~/projects/as21/a1001eh/kernel$ tree /home/simba/projects/as21/a1001eh/out/target/product/a1001eh/update-3_1.4.0.20130326.rc0.a1001eh_simba
+/home/simba/projects/as21/a1001eh/out/target/product/a1001eh/update-3_1.4.0.20130326.rc0.a1001eh_simba
+|-- boot.img
+|-- Manifest.xml
+|-- META-INF
+|   |-- CERT.RSA
+|   |-- CERT.SF
+|   |-- com
+|   |   |-- android
+|   |   |   `-- metadata
+|   |   `-- google
+|   |       `-- android
+|   |           |-- update-binary
+|   |           `-- updater-script
+|   `-- MANIFEST.MF
+|-- recovery
+|   |-- etc
+|   |   `-- install-recovery.sh
+|   `-- recovery-from-boot.p
+`-- system
+    |-- app
+    |   |-- ApplicationsProvider.apk
+    |   `-- VpnDialogs.apk
+    |-- bin
+    |   |-- wpa_supplicant
+    |   `-- ZipFileRO_test
+    |-- build.prop
+    |-- etc
+    |   |-- apns-conf.xml
+    |   |-- audio_effects.conf
+    |   |-- bluesoleil
+    |   |   |-- BtSettings.INI
+    |   |   `-- TL.INI
+    |   |-- bluetooth
+    |   |   |-- input.conf
+    |   |   `-- network.conf
+    |   |-- core_register
+    |   |-- dbus.conf
+    |   |-- dhcpcd
+    |   |   |-- dhcpcd-hooks
+    |   |   |   |-- 20-dns.conf
+    |   |   |   `-- 95-configured
+    |   |   `-- dhcpcd-run-hooks
+    |   |-- fallback_fonts.xml
+    |   |-- firmware
+    |   |   |-- ath6k
+    |   |   |   `-- AR6003
+    |   |   |       |-- hw2.0
+    |   |   |       |   `-- otp.bin.z77
+    |   |   |       `-- hw2.1.1
+    |   |   |           |-- athtcmd_ram.bin
+    |   |   |           `-- softmac
+    |   |   `-- unifi-sdio
+    |   |       |-- a10
+    |   |       |   `-- staonly.xbv
+    |   |       |-- mac.txt
+    |   |       `-- ufmib.dat
+    |   |-- gps
+    |   |   `-- OrionSys.so
+    |   |-- permissions
+    |   |   `-- required_hardware.xml
+    |   |-- ppp
+    |   |   `-- ip-up-vpn
+    |   |-- security
+    |   |   |-- cacerts
+    |   |   |   `-- ff783690.0
+    |   |   `-- otacerts.zip
+    |   |-- system_fonts.xml
+    |   |-- vold.fstab
+    |   `-- wifi
+    |       `-- wpa_supplicant.conf
+    |-- fonts
+    |   |-- Roboto-Italic.ttf
+    |   `-- Roboto-Regular.ttf
+    |-- framework
+    |   |-- services.jar
+    |   `-- svc.jar
+    |-- lib
+    |   |-- bluez-plugin
+    |   |   `-- network.so
+    |   |-- drm
+    |   |   `-- libdrmpassthruplugin.so
+    |   |-- egl
+    |   |   `-- libGLESv2_VIVANTE.so
+    |   |-- firmware
+    |   |   |-- ar3k
+    |   |   |   `-- 30101
+    |   |   |       `-- RamPatch.txt
+    |   |   `-- vpu
+    |   |       |-- vpu_fw_imx6d.bin
+    |   |       `-- vpu_fw_imx6q.bin
+    |   |-- hw
+    |   |   |-- sensors.freescale.so
+    |   |   `-- sensors.goldfish.so
+    |   |-- invoke_mock_media_player.so
+    |   |-- modules
+    |   |   |-- compat.ko
+    |   |   `-- unifi_sdio.ko
+    |   |-- Resource.irf
+    |   `-- soundfx
+    |       `-- libvisualizer.so
+    |-- media
+    |   `-- audio
+    |       |-- alarms
+    |       |   `-- Scandium.ogg
+    |       |-- notifications
+    |       |   `-- Zirconium.ogg
+    |       |-- ringtones
+    |       |   `-- World.ogg
+    |       `-- ui
+    |           `-- VideoRecord.ogg
+    |-- usr
+    |   |-- icu
+    |   |   `-- icudt46l.dat
+    |   |-- idc
+    |   |   |-- qwerty2.idc
+    |   |   `-- qwerty.idc
+    |   |-- keychars
+    |   |   `-- Virtual.kcm
+    |   |-- keylayout
+    |   |   |-- cis-keypad.kl
+    |   |   `-- Vendor_22b8_Product_093d.kl
+    |   |-- share
+    |   |   |-- alsa
+    |   |   |   |-- alsa.conf
+    |   |   |   |-- cards
+    |   |   |   |   `-- aliases.conf
+    |   |   |   `-- pcm
+    |   |   |       |-- surround51.conf
+    |   |   |       `-- surround71.conf
+    |   |   |-- bmd
+    |   |   |   |-- RFFspeed_501.bmd
+    |   |   |   `-- RFFstd_501.bmd
+    |   |   `-- zoneinfo
+    |   |       |-- zoneinfo.idx
+    |   |       `-- zoneinfo.version
+    |   `-- srec
+    |       `-- config
+    |           `-- en.us
+    |               |-- baseline.par
+    |               |-- dictionary
+    |               |   `-- enroll.ok
+    |               |-- g2p
+    |               |   `-- en-US-ttp.data
+    |               |-- grammars
+    |               |   `-- VoiceDialer.g2g
+    |               `-- models
+    |                   |-- generic11_f.swimdl
+    |                   `-- generic.swiarb
+    `-- xbin
+        |-- add-property-tag
+        `-- timeinfo
+
+66 directories, 1025 files
+############################
+
+以上结构图中省略了很多文件，都是system目录下的。
+其中重要的脚本文件有：
+	META-INF/com/google/android/updater-script
+	recovery/etc/install-recovery.sh
+升级来源文件：
+	boot.img
+	/system
+	recovery/recovery-from-boot.p
+
+另一个很重要的文件是/etc/recovery.fstab，内容由BSP的EMMC分区方案确定。
+-------- /etc/recovery.fstab -----------
+/boot   	emmc	/dev/block/mmcblk0p1
+/sdcard 	vfat	/dev/block/mmcblk0p4
+/recovery 	emmc	/dev/block/mmcblk0p2
+/system 	ext4	/dev/block/mmcblk0p5
+/cache 		ext4	/dev/block/mmcblk0p6
+/data 		ext4	/dev/block/mmcblk0p7
+/misc  		emmc	/dev/block/mmcblk0p9
+-----------------------------------------
+
+编译脚本会根据这个文件填充updater-script，后面可以看到。
+这个文件存在于recovery分区中，进入recovery模式后，可以访问到它。
+
+进入recovery模式的方式多种多样，但每种方式都需要bootloader的配合。
+进入recovery模式后会对升级包进行验证，过程不表，失败退出。
+进入recovery流程后，主要关心updater-script的工作。
+首先是updater-script，代码中可以很容易分析出他的工作流程，如下：
+--------- updater-script ----------------
+....								//省略若干
+
+format("ext4", "EMMC", "/dev/block/mmcblk0p5", "0");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/system");	//挂载system分区。这里有"/dev/block/mmcblk0p5"和"/system"的对应关系，来源于前文提到的recovery.fstab。
+
+
+package_extract_dir("recovery", "/system");			//将zip包中的recovery目录解压到系统/system目录，将来升级recovery分区时使用（install-recovery.sh，recovery-from-boot.p）
+package_extract_dir("system", "/system");			//将zip包中的system目录解压到系统/system目录，完成system分区的升级
+
+......								//省略若干
+
+symlink("mksh", "/system/bin/sh");
+symlink("toolbox", "/system/bin/cat", ....);			//创建软链接，省略若干
+
+retouch_binaries("/system/lib/libbluedroid.so", .....);		//再摸一下各种动态库，省略若干
+
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+......								//修改权限，省略若干
+
+
+show_progress(0.200000, 0);					//显示升级进度
+......								//修改权限，省略若干
+
+package_extract_file("boot.img", "/dev/block/mmcblk0p1");	//将boot.img解压到相应block设备，完成boot分区的升级。boot分区包含了kernel + ramdisk
+
+show_progress(0.100000, 0);
+unmount("/system");						//卸载system分区
+---------------------------------------------
+
+system分区和boot升级完成，接下来重启，进入正常系统。
+正常启动的系统init.rc中定义了一个用于烧写recovery分区的服务，也就是执行install-recovery.sh，每次启动都要执行一次。
+----- /init.rc ------
+	...
+	service flash_recovery /system/etc/install-recovery.sh
+	    class main
+	    oneshot
+	...
+--------------------
+
+install-recovery.sh 是recovery模式中updater-script解压出来的，内容如下：
+------- /system/etc/install-recovery.sh ----
+#!/system/bin/sh
+  log -t recovery "Before sha1.... Simba...."
+if ! applypatch -c EMMC:/dev/block/mmcblk0p2:4642816:c125924fef5a1351c9041ac9e1d6fd1f9738ff77; then
+  log -t recovery "Installing new recovery image__From Simba..."
+  applypatch EMMC:/dev/block/mmcblk0p1:3870720:aee24fadd281e9e2bd4883ee9962a86fc345dcab EMMC:/dev/block/mmcblk0p2 c125924fef5a1351c9041ac9e1d6fd1f9738ff77 4642816 aee24fadd281e9e2bd4883ee9962a86fc345dcab:/system/recovery-from-boot.p
+else
+  log -t recovery "Recovery image already installed__From Simba..."
+fi
+-------------------------------------------
+
+执行 make otapackage命令时，编译脚本比较boot.img和recovery.img得出patch文件recovery-from-boot.p，recovery-from-boot.p也是在recovery模式中updater-script解压到system目录的。
+install-recovery.sh脚本就是使用这个patch加上boot分区，更新recovery分区。应用patch前，install-recovery.sh会计算当前recovery分区的sha1。
+若计算结果与脚本中记录的相同（c125924fef5a1351c9041ac9e1d6fd1f9738ff77），说明已经更新过了，不再操作。
+这样就完成了/system分区，boot分区，recovery分区的升级。
+
+以上是标准的Android升级流程，我们自己添加的分区可以参考以上几种方式实现。采用怎样的升级方式需要细细考量，关系到升级包的内容结构。
+双系统升级也没问题，无非就是在各个脚本中添加几句。
+例如：
+mount("ext4", "EMMC", "/dev/block/mmcblk0p100", "/system2");	
+package_extract_dir("recovery", "/system2");			
+package_extract_dir("system", "/system2");			
+
