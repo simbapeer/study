@@ -1,0 +1,12 @@
+{
+	//Settings for radio
+    /*/
+    "adb_args": ["logcat", "-v", "time", "-b", "radio"],
+    //*/
+    //Settings for TBOX service
+    
+    //
+    "adb_args": ["logcat", "-v", "time", "-b", "radio", "-b", "main"],
+    "adb_filter": "TB_",
+    //*/
+}
