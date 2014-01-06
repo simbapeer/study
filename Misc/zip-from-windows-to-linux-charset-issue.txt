@@ -1,0 +1,3 @@
+ sudo apt-get install convmv p7zip-full
+ LANG=C 7z x yourzip.zip 
+ convmv -f utf8 -t gbk -r --notest *
