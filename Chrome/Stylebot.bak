@@ -1,0 +1,1 @@
+{"weibo.com":{"_enabled":true,"_rules":{"div.FIXED":{"display":"none"}}},"www.36kr.com":{"_enabled":true,"_rules":{"nav.sideBar.hidden-phone.pull-left.affix ul":{"display":"none"},"div.main":{"background-color":"#C7EDCC"},"div.inner.row":{"background-color":"#C7EDCC"},"body.js":{"background-color":"#C7EDCC"}}}}
