@@ -1,0 +1,4 @@
+#! /bin/sh
+python2.7 /home/simba/tools/goagent/local/proxy.py&
+
+
