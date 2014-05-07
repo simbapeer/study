@@ -3,10 +3,18 @@
     /*/
     "adb_args": ["logcat", "-v", "time", "-b", "radio"],
     //*/
-    //Settings for TBOX service
     
+    //Settings for TBOX service
     //
-    "adb_args": ["logcat", "-v", "time", "-b", "radio", "-b", "main"],
-    "adb_filter": "TB_",
+    "adb_args": ["logcat", "-v", "threadtime", "-b", "radio"],
+    //"adb_filter": "TB_",
     //*/
+
+    //Default Settings
+    /*/
+    "adb_args": ["logcat", "-v", "threadtime"],
+	//*/
+
+    "adb_maxlines": 300000,
+
 }
