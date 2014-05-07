@@ -1,0 +1,13 @@
+[color]
+	ui = auto
+[user]
+	name = Simba
+	email = simba.peer@gmail.com
+[core]
+	editor = vim
+[alias]
+	st = status
+	cp = cherry-pick
+	co = checkout
+	ci = commit
+	br = branch

@@ -140,4 +140,5 @@ export SIMBA_216=chunboyu@10.10.96.216:/pateo01/chunboyu/
 
 export GOROOT=$HOME/bin/go
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:/home/simba/android/android-ndk-r9/
 
