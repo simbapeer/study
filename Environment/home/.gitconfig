@@ -5,6 +5,8 @@
 	email = simba.peer@gmail.com
 [core]
 	editor = vim
+	autocrlf = input
+	excludesfile = /Users/simba/.gitignore
 [alias]
 	st = status
 	cp = cherry-pick
