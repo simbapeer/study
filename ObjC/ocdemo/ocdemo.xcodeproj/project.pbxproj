@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3CFA133194EB62600CBD560 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA132194EB62600CBD560 /* main.m */; };
+		A3CFA136194EB62600CBD560 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA135194EB62600CBD560 /* AppDelegate.m */; };
+		A3CFA139194EB62600CBD560 /* ocdemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA137194EB62600CBD560 /* ocdemo.xcdatamodeld */; };
+		A3CFA13B194EB62600CBD560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CFA13A194EB62600CBD560 /* Images.xcassets */; };
+		A3CFA147194EB62700CBD560 /* ocdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA146194EB62700CBD560 /* ocdemoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3CFA141194EB62700CBD560 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3CFA125194EB62600CBD560 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3CFA12C194EB62600CBD560;
+			remoteInfo = ocdemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3CFA12D194EB62600CBD560 /* ocdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ocdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CFA131194EB62600CBD560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CFA132194EB62600CBD560 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3CFA134194EB62600CBD560 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3CFA135194EB62600CBD560 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A3CFA138194EB62600CBD560 /* ocdemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ocdemo.xcdatamodel; sourceTree = "<group>"; };
+		A3CFA13A194EB62600CBD560 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A3CFA140194EB62700CBD560 /* ocdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ocdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CFA145194EB62700CBD560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CFA146194EB62700CBD560 /* ocdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ocdemoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3CFA12A194EB62600CBD560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CFA13D194EB62700CBD560 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3CFA124194EB62600CBD560 = {
+			isa = PBXGroup;
+			children = (
+				A3CFA12F194EB62600CBD560 /* ocdemo */,
+				A3CFA143194EB62700CBD560 /* ocdemoTests */,
+				A3CFA12E194EB62600CBD560 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3CFA12E194EB62600CBD560 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFA12D194EB62600CBD560 /* ocdemo.app */,
+				A3CFA140194EB62700CBD560 /* ocdemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3CFA12F194EB62600CBD560 /* ocdemo */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFA134194EB62600CBD560 /* AppDelegate.h */,
+				A3CFA135194EB62600CBD560 /* AppDelegate.m */,
+				A3CFA13A194EB62600CBD560 /* Images.xcassets */,
+				A3CFA137194EB62600CBD560 /* ocdemo.xcdatamodeld */,
+				A3CFA130194EB62600CBD560 /* Supporting Files */,
+			);
+			path = ocdemo;
+			sourceTree = "<group>";
+		};
+		A3CFA130194EB62600CBD560 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFA131194EB62600CBD560 /* Info.plist */,
+				A3CFA132194EB62600CBD560 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3CFA143194EB62700CBD560 /* ocdemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFA146194EB62700CBD560 /* ocdemoTests.m */,
+				A3CFA144194EB62700CBD560 /* Supporting Files */,
+			);
+			path = ocdemoTests;
+			sourceTree = "<group>";
+		};
+		A3CFA144194EB62700CBD560 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3CFA145194EB62700CBD560 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3CFA12C194EB62600CBD560 /* ocdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CFA14A194EB62700CBD560 /* Build configuration list for PBXNativeTarget "ocdemo" */;
+			buildPhases = (
+				A3CFA129194EB62600CBD560 /* Sources */,
+				A3CFA12A194EB62600CBD560 /* Frameworks */,
+				A3CFA12B194EB62600CBD560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ocdemo;
+			productName = ocdemo;
+			productReference = A3CFA12D194EB62600CBD560 /* ocdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3CFA13F194EB62700CBD560 /* ocdemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CFA14D194EB62700CBD560 /* Build configuration list for PBXNativeTarget "ocdemoTests" */;
+			buildPhases = (
+				A3CFA13C194EB62700CBD560 /* Sources */,
+				A3CFA13D194EB62700CBD560 /* Frameworks */,
+				A3CFA13E194EB62700CBD560 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CFA142194EB62700CBD560 /* PBXTargetDependency */,
+			);
+			name = ocdemoTests;
+			productName = ocdemoTests;
+			productReference = A3CFA140194EB62700CBD560 /* ocdemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3CFA125194EB62600CBD560 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Simba;
+				TargetAttributes = {
+					A3CFA12C194EB62600CBD560 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A3CFA13F194EB62700CBD560 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = A3CFA12C194EB62600CBD560;
+					};
+				};
+			};
+			buildConfigurationList = A3CFA128194EB62600CBD560 /* Build configuration list for PBXProject "ocdemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3CFA124194EB62600CBD560;
+			productRefGroup = A3CFA12E194EB62600CBD560 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3CFA12C194EB62600CBD560 /* ocdemo */,
+				A3CFA13F194EB62700CBD560 /* ocdemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3CFA12B194EB62600CBD560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CFA13B194EB62600CBD560 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CFA13E194EB62700CBD560 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3CFA129194EB62600CBD560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CFA136194EB62600CBD560 /* AppDelegate.m in Sources */,
+				A3CFA133194EB62600CBD560 /* main.m in Sources */,
+				A3CFA139194EB62600CBD560 /* ocdemo.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CFA13C194EB62700CBD560 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CFA147194EB62700CBD560 /* ocdemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3CFA142194EB62700CBD560 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3CFA12C194EB62600CBD560 /* ocdemo */;
+			targetProxy = A3CFA141194EB62700CBD560 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A3CFA148194EB62700CBD560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3CFA149194EB62700CBD560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3CFA14B194EB62700CBD560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ocdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A3CFA14C194EB62700CBD560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = ocdemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A3CFA14E194EB62700CBD560 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ocdemo.app/ocdemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ocdemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		A3CFA14F194EB62700CBD560 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ocdemo.app/ocdemo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ocdemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3CFA128194EB62600CBD560 /* Build configuration list for PBXProject "ocdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CFA148194EB62700CBD560 /* Debug */,
+				A3CFA149194EB62700CBD560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CFA14A194EB62700CBD560 /* Build configuration list for PBXNativeTarget "ocdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CFA14B194EB62700CBD560 /* Debug */,
+				A3CFA14C194EB62700CBD560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A3CFA14D194EB62700CBD560 /* Build configuration list for PBXNativeTarget "ocdemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CFA14E194EB62700CBD560 /* Debug */,
+				A3CFA14F194EB62700CBD560 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A3CFA137194EB62600CBD560 /* ocdemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A3CFA138194EB62600CBD560 /* ocdemo.xcdatamodel */,
+			);
+			currentVersion = A3CFA138194EB62600CBD560 /* ocdemo.xcdatamodel */;
+			path = ocdemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A3CFA125194EB62600CBD560 /* Project object */;
+}
