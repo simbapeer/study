@@ -12,6 +12,8 @@
 		A3CFA139194EB62600CBD560 /* ocdemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA137194EB62600CBD560 /* ocdemo.xcdatamodeld */; };
 		A3CFA13B194EB62600CBD560 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CFA13A194EB62600CBD560 /* Images.xcassets */; };
 		A3CFA147194EB62700CBD560 /* ocdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA146194EB62700CBD560 /* ocdemoTests.m */; };
+		A3CFA154194EB63F00CBD560 /* SBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA151194EB63F00CBD560 /* SBPerson.m */; };
+		A3CFA155194EB63F00CBD560 /* XXSBPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CFA153194EB63F00CBD560 /* XXSBPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,10 @@
 		A3CFA140194EB62700CBD560 /* ocdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ocdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CFA145194EB62700CBD560 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3CFA146194EB62700CBD560 /* ocdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ocdemoTests.m; sourceTree = "<group>"; };
+		A3CFA150194EB63F00CBD560 /* SBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPerson.h; sourceTree = "<group>"; };
+		A3CFA151194EB63F00CBD560 /* SBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPerson.m; sourceTree = "<group>"; };
+		A3CFA152194EB63F00CBD560 /* XXSBPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXSBPerson.h; sourceTree = "<group>"; };
+		A3CFA153194EB63F00CBD560 /* XXSBPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXSBPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,10 @@
 		A3CFA12F194EB62600CBD560 /* ocdemo */ = {
 			isa = PBXGroup;
 			children = (
+				A3CFA150194EB63F00CBD560 /* SBPerson.h */,
+				A3CFA151194EB63F00CBD560 /* SBPerson.m */,
+				A3CFA152194EB63F00CBD560 /* XXSBPerson.h */,
+				A3CFA153194EB63F00CBD560 /* XXSBPerson.m */,
 				A3CFA134194EB62600CBD560 /* AppDelegate.h */,
 				A3CFA135194EB62600CBD560 /* AppDelegate.m */,
 				A3CFA13A194EB62600CBD560 /* Images.xcassets */,
@@ -208,7 +218,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CFA155194EB63F00CBD560 /* XXSBPerson.m in Sources */,
 				A3CFA136194EB62600CBD560 /* AppDelegate.m in Sources */,
+				A3CFA154194EB63F00CBD560 /* SBPerson.m in Sources */,
 				A3CFA133194EB62600CBD560 /* main.m in Sources */,
 				A3CFA139194EB62600CBD560 /* ocdemo.xcdatamodeld in Sources */,
 			);

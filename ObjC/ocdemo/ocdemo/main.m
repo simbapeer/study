@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "SBPerson.h"
+#import "XXSBPerson.h"
 
 int main(int argc, char * argv[]) {
+    SBPerson* p = [XXSBPerson perseon ];
+    [p sayHello];
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
