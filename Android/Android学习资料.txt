@@ -1,0 +1,10 @@
+一、推荐一本书《Android编程权威指南》
+亚马逊购买链接：
+http://www.amazon.cn/%E5%9B%BE%E4%B9%A6/dp/B00J4DXWDG/ref=cm_cr_pr_product_top
+电子版下载地址：
+http://pan.baidu.com/wap/link?uk=1544892837&shareid=3659231680&third=0
+
+二、学习及解决问题途径
+参考这个链接就好啦，这上面讲了查看资料及解决问题的方式：http://zhi.hu/KPcv
+另外就是Google搜索，Google搜索结果中StackOverFlow这个网站的回答都挺靠谱的，不过Google搜索需要翻墙的。
+http://segmentfault.com/是一个类似于StackOverFlow的中文网站，这上面也有Android的问题解答。
