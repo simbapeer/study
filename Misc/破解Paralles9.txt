@@ -1,0 +1,7 @@
+首先将Parallels安装完成，将其激活为试用版本，然后完全退出” Parallels”,然后进入安装目录“/Library/Preferences/Parallels”，打开文件夹内的“licenses.xml”，必须用文本编辑工具打开。 
+
+找到第12行的在<KeyValue> </KeyValue>之间的激活码，然后回到parallels软件，进入激活界面，将刚刚“licenses.xml”文件第12行复制出来的字符串复制到激活界面的激活码窗口内，这时候会提示注册码错误，别着急，有没有发现那段复制的字符串和激活界面中激活码输入窗口内的字符串不一样，这个时候吧激活界面激活码输入窗口内的激活码返回复制到“licenses.xml”文件第8行的<Key> </Key>之间，保存。 
+
+PS：如果说无法保存，文件权限等提示，我们就将修改好的“licenses.xml”文件另存到桌面上，然后删除原来的“licenses.xml”文件，然后把另存在桌面上的“licenses.xml”文件复制到“/Library/Preferences/Parallels”目录内即可。 
+
+重新打开Parallels，恭喜你！ParallelsDesktop 9已经激活了！ 
