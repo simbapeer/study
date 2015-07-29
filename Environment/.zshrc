@@ -58,8 +58,11 @@ export PATH=~/tools/android-sdk-macosx/platform-tools:$PATH
 export PATH=/Users/simba/tools/crystax-ndk-10.1.0:$PATH
 
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias addr2line='~/tools/crystax-ndk-10.1.0/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line'
 alias c="pbcopy"
 alias p="pbpaste"
+alias cdp="cd \$(pbpaste)"
+alias ipython="python /Library/Python/2.7/site-packages/IPython/__main__.py"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 

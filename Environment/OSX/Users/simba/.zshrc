@@ -6,6 +6,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="jokinryou"
+#ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,8 +52,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=~/tools/android-sdk-macosx/platform-tools:$PATH
+
+export PATH=/Users/simba/tools/crystax-ndk-10.1.0:$PATH
+
+alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
+alias addr2line='~/tools/crystax-ndk-10.1.0/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line'
+alias c="pbcopy"
+alias p="pbpaste"
+alias cdp="cd \$(pbpaste)"
+alias ipython="python /Library/Python/2.7/site-packages/IPython/__main__.py"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -80,3 +90,7 @@ export PATH=~/tools/android-sdk-macosx/platform-tools:$PATH
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+unsetopt NOMATCH
+
+PERL_MB_OPT="--install_base \"/Users/simba/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/simba/perl5"; export PERL_MM_OPT;
