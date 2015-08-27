@@ -63,6 +63,11 @@ alias c="pbcopy"
 alias p="pbpaste"
 alias cdp="cd \$(pbpaste)"
 alias ipython="python /Library/Python/2.7/site-packages/IPython/__main__.py"
+alias fb="fastboot"
+alias ffker="fastboot flash kernel /tmp/zImage"
+alias ffsys="fastboot flash system /tmp/system.img"
+alias ffboot="fastboot flash hikbootv2 /tmp/hikbootv2.bin"
+alias ff="fastboot flash"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -94,3 +99,4 @@ unsetopt NOMATCH
 
 PERL_MB_OPT="--install_base \"/Users/simba/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/simba/perl5"; export PERL_MM_OPT;
+function mountAndroid { hdiutil attach ~/Android.dmg.sparseimage -mountpoint /Volumes/Android; }

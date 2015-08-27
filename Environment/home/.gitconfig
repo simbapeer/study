@@ -1,8 +1,8 @@
 [color]
 	ui = auto
 [user]
-	name = Simba
-	email = simba.peer@gmail.com
+	name = Yu Chunbo
+	email = yuchunbo@hikwisdom.com
 [core]
 	editor = vim
 	autocrlf = input
@@ -13,3 +13,18 @@
 	co = checkout
 	ci = commit
 	br = branch
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
+[merge]
+	tool = kdiff3
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
