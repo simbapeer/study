@@ -68,6 +68,11 @@ alias ffker="fastboot flash kernel /tmp/zImage"
 alias ffsys="fastboot flash system /tmp/system.img"
 alias ffboot="fastboot flash hikbootv2 /tmp/hikbootv2.bin"
 alias ff="fastboot flash"
+alias fr="fastboot reboot"
+alias sff="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot flash"
+alias sfb="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot"
+alias sfr="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot reboot-otg"
+alias sshMac="ssh simba@simba_mac"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
