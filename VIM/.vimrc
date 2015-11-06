@@ -24,7 +24,7 @@ Plugin 'L9'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
-Plugin 'user/L9', {'name': 'newL9'}
+" Plugin 'user/L9', {'name': 'newL9'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -49,3 +49,6 @@ set nu!
 filetype on
 set tabstop=8 softtabstop=0 expandtab shiftwidth=4 smarttab
 set mouse=a
+
+
+Bundle 'Valloric/YouCompleteMe'
