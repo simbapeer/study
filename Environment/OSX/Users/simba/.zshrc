@@ -110,4 +110,4 @@ unsetopt NOMATCH
 
 PERL_MB_OPT="--install_base \"/Users/simba/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/Users/simba/perl5"; export PERL_MM_OPT;
-function mountAndroid { hdiutil attach ~/Android.dmg.sparseimage -mountpoint /Volumes/Android; }
+function mountAndroid { hdiutil attach ~/AndroidImage/Android.sparsebundle -mountpoint /Volumes/Android; }
