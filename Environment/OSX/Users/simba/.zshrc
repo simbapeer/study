@@ -60,6 +60,8 @@ export PATH=/Users/simba/tools/crystax-ndk-10.1.0:$PATH
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias addr2line='~/tools/crystax-ndk-10.1.0/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line'
 alias grdl="./gradlew"
+alias gadebug="./gradlew aDebug"
+alias garelease="./gradlew aRelease"
 alias c="pbcopy"
 alias ad="adb devices"
 alias ap="adb push"
@@ -78,6 +80,7 @@ alias sshMac="ssh simba@simba_mac"
 alias sff="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot flash"
 alias sfb="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot"
 alias sfr="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot reboot-otg"
+alias glr="git pull --rebase"
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
