@@ -8,44 +8,6 @@
     <array>
         <dict>
             <key>match</key>
-<!--            <string>^([\d\- :.]*)(E)\/(.*)\( *(\d+)\): (.*)</string> -->       <!-- adb logcat -v time-->
-            <string>^([\d\- :.]*) *(\d+) *(\d+) *(E) ([^:]*): (.*)</string>    <!-- adb logcat -v threadtime-->
-            <key>captures</key>
-            <dict>
-                <key>1</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-                <key>2</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-                <key>3</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-                <key>4</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-                <key>5</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-                <key>6</key>
-                <dict>
-                    <key>name</key>
-                    <string>invalid.illegal.adb</string>
-                </dict>
-            </dict>
-        </dict>
-        <dict>
-            <key>match</key>
 <!--            <string>^([\d\- :.]*)(F)\/(.*)\( *(\d+)\): (.*)</string> -->       <!-- adb logcat -v time-->
             <string>^([\d\- :.]*) *(\d+) *(\d+) *(F) ([^:]*): (.*)</string>    <!-- adb logcat -v threadtime-->
             <key>captures</key>
@@ -82,6 +44,45 @@
                 </dict>
             </dict>
         </dict>
+        <dict>
+            <key>match</key>
+<!--            <string>^([\d\- :.]*)(E)\/(.*)\( *(\d+)\): (.*)</string> -->       <!-- adb logcat -v time-->
+            <string>^([\d\- :.]*) *(\d+) *(\d+) *(E) ([^:]*): (.*)</string>    <!-- adb logcat -v threadtime-->
+            <key>captures</key>
+            <dict>
+                <key>1</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+                <key>2</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+                <key>3</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+                <key>4</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+                <key>5</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+                <key>6</key>
+                <dict>
+                    <key>name</key>
+                    <string>invalid.illegal.adb</string>
+                </dict>
+            </dict>
+        </dict>
+
         <dict>
             <key>match</key>
  <!--           <string>^([\d\- :.]*)(D)\/(.*)\( *(\d+)\): (.*)</string>  -->      <!-- adb logcat -v time-->
