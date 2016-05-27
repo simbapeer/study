@@ -1,0 +1,29 @@
+#print 'reading'
+#
+#Object('hello.c')
+#Program('hello.c')
+#Program('hello.cpp')
+#Program('hello_cpp', Glob('*.cpp'))
+nothing_src = Split("""
+  hello.cpp
+  nothing.cpp
+  still_nothing.cc
+  """)
+Program('hello_nothing', nothing_src)
+#Library('hello_nothing', nothing_src) #static library
+StaticLibrary('hello_nothing', nothing_src) #static library
+
+SharedLibrary('print_hello', ['print_hello.cpp']) #stared
+
+Program('printhello', 'printhello_main.cpp', LIBS='print_hello', LIBPATH=['.'])
+
+env = Environment(XXX="xxvalue")
+n = File("foo.c")
+
+ret = env.GetBuildPath("1/2/$XXX")
+print type(ret)
+print 'print env value:', ret
+#Decider('make')
+
+#print 'end reading'
+
