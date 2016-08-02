@@ -52,17 +52,39 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH=~/tools/android-sdk-macosx/platform-tools:$PATH
 
 export PATH=/Users/simba/tools/crystax-ndk-10.1.0:$PATH
 
 alias fuck='eval $(thefuck $(fc -ln -1)); history -r'
 alias addr2line='~/tools/crystax-ndk-10.1.0/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-addr2line'
+alias grdl="./gradlew"
+alias gclean="./gradlew clean"
+alias gadebug="./gradlew assembleDebug"
+alias garelease="./gradlew assembleRelease"
 alias c="pbcopy"
+alias ad="adb devices"
+alias ap="adb push"
+alias ash="adb shell"
 alias p="pbpaste"
 alias cdp="cd \$(pbpaste)"
 alias ipython="python /Library/Python/2.7/site-packages/IPython/__main__.py"
+alias fb="fastboot"
+alias ffker="fastboot flash kernel /tmp/zImage"
+alias ffsys="fastboot flash system /tmp/system.img"
+alias ffboot="fastboot flash hikbootv2 /tmp/hikbootv2.bin"
+alias ff="fastboot flash"
+alias fr="fastboot reboot"
+alias sshLinux="ssh simba@simba_linux"
+alias sshMac="ssh simba@simba_mac"
+alias sff="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot flash"
+alias sfb="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot"
+alias sfr="sudo /home/simba/projects/hik-x/hik4412_kit_kat/XDY_D2/out/host/linux-x86/bin/fastboot reboot-otg"
+alias glr="git pull --rebase"
+alias sc="scons"
+alias qsc="scons -Q"
+
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -90,3 +112,10 @@ alias ipython="python /Library/Python/2.7/site-packages/IPython/__main__.py"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+unsetopt NOMATCH
+
+PERL_MB_OPT="--install_base \"/Users/simba/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/simba/perl5"; export PERL_MM_OPT;
+function mountAndroid { hdiutil attach /Volumes/S-SSD/Android.sparsebundle -mountpoint /Volumes/Android; }
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
