@@ -119,3 +119,7 @@ PERL_MM_OPT="INSTALL_BASE=/Users/simba/perl5"; export PERL_MM_OPT;
 function mountAndroid { hdiutil attach /Volumes/S-SSD/Android.sparsebundle -mountpoint /Volumes/Android; }
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export JAVA_HOME=$SIMBA_JAVA_HOME
+export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar
+export PATH=$JAVA_HOME/bin:$PATH
+
